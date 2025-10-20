@@ -25,8 +25,6 @@ import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity {
 
-    // --- VARIÁVEIS ---
-    // Mude o nome para o do seu módulo Bluetooth
     private static final String DEVICE_NAME = "HC-06"; // ou "HC-06", etc.
 
     // UUID padrão para comunicação SPP (Serial Port Profile)
