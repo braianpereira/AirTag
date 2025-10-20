@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#121212"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desconectado"
+        android:textColor="#9E9E9E"
+        android:textSize="18sp"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conectar ao ESP"
+        android:layout_marginBottom="24dp"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/controlsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnBuzzer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acionar Sinal Sonoro"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#4CAF50"
+            android:padding="16dp"/>
+
+        <Button
+            android:id="@+id/btnLed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acionar LED"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2196F3"
+            android:padding="16dp"/>
+
+        <Button
+            android:id="@+id/btnAmbos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acionar Ambos"
+            android:backgroundTint="#9C27B0"
+            android:padding="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>
